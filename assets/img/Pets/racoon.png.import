@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byedsvlx673ru"
-path="res://.godot/imported/monki.png-d9fe494f9bf2e895a582e23f678adf34.ctex"
+uid="uid://bhfjprgp4pnof"
+path="res://.godot/imported/racoon.png-fe4416b4c16247651e0d95aedd769b99.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/img/Pets/monki.png"
-dest_files=["res://.godot/imported/monki.png-d9fe494f9bf2e895a582e23f678adf34.ctex"]
+source_file="res://assets/img/Pets/racoon.png"
+dest_files=["res://.godot/imported/racoon.png-fe4416b4c16247651e0d95aedd769b99.ctex"]
 
 [params]
 

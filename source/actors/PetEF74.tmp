@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://r1srkhptyee1"]
 
 [ext_resource type="Script" path="res://source/actors/pet.gd" id="1_mp1so"]
-[ext_resource type="Texture2D" uid="uid://bhfjprgp4pnof" path="res://assets/img/capybara.png" id="2_lwjfl"]
+[ext_resource type="Texture2D" uid="uid://bhfjprgp4pnof" path="res://assets/img/racoon.png" id="2_lwjfl"]
 [ext_resource type="Script" path="res://source/actors/ShakeTween.gd" id="3_00fq3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_tkmqf"]
