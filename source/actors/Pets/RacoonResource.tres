@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="petResource" format=3 uid="uid://m1hfx8b3e4ks"]
+
+[ext_resource type="Script" uid="uid://dbglnym5sjp0u" path="res://source/actors/pet/petResourceBase.gd" id="1_jpxkw"]
+[ext_resource type="Texture2D" uid="uid://bhfjprgp4pnof" path="res://assets/img/Pets/racoon.png" id="2_tc74i"]
+
+[resource]
+script = ExtResource("1_jpxkw")
+animal = 1
+texture = ExtResource("2_tc74i")
+name = "Jimothy"

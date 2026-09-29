@@ -1,11 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dbbt3j77joyry"]
+[gd_scene format=3 uid="uid://dbbt3j77joyry"]
 
 [ext_resource type="Texture2D" uid="uid://b8hgdxdb8txpv" path="res://assets/img/green.webp" id="1_uph6n"]
 [ext_resource type="Texture2D" uid="uid://cid26mv4qe07s" path="res://assets/img/Terrain (16x16).png" id="2_3nd1k"]
 [ext_resource type="PackedScene" uid="uid://r1srkhptyee1" path="res://source/actors/pet/Pet.tscn" id="3_3ea0y"]
-[ext_resource type="Script" path="res://source/scripts/GuestPetManager.gd" id="4_oodi6"]
-[ext_resource type="Resource" uid="uid://m1hfx8b3e4ks" path="res://source/actors/Pets/CapybaraResource.tres" id="5_e0vps"]
-[ext_resource type="Resource" uid="uid://bolm6sus7rm6k" path="res://source/actors/Pets/MonkeyResource.tres" id="6_4rbro"]
+[ext_resource type="Script" uid="uid://dmbu8q8vpn642" path="res://source/scripts/GuestPetManager.gd" id="4_oodi6"]
+[ext_resource type="Resource" uid="uid://m1hfx8b3e4ks" path="res://source/actors/Pets/RacoonResource.tres" id="5_e0vps"]
+[ext_resource type="Resource" uid="uid://bolm6sus7rm6k" path="res://source/actors/Pets/RatResource.tres" id="6_4rbro"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5u2nf"]
 texture = ExtResource("2_3nd1k")

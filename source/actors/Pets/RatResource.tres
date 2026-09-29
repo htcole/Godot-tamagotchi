@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="petResource" format=3 uid="uid://bolm6sus7rm6k"]
+
+[ext_resource type="Script" uid="uid://dbglnym5sjp0u" path="res://source/actors/pet/petResourceBase.gd" id="1_1p4gw"]
+[ext_resource type="Texture2D" uid="uid://5xwhik2t2vmw" path="res://assets/img/Pets/rat.png" id="2_sv2lv"]
+
+[resource]
+script = ExtResource("1_1p4gw")
+texture = ExtResource("2_sv2lv")
+name = "Jerry"
