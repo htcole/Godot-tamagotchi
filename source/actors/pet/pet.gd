@@ -17,6 +17,10 @@ class_name Pet
 @onready var sprite = $Sprite2D
 @onready var petDebugLabel = $PetDebugLabel
 
+@export var normal_texture: Texture2D
+@export var love_texture: Texture2D
+@export var hate_texture: Texture2D
+
 # ==========================================
 # VARIABLES & SETTINGS
 # ==========================================

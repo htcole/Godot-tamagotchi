@@ -166,6 +166,7 @@ func petting():
 	if pet_counter > pet_limit:
 		print('dont want pets now')
 		reaction_popup('sick')
+		
 		pet.pet_stats.happiness -= 5
 		return
 		
