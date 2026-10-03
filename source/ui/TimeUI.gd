@@ -35,7 +35,7 @@ var hour: int
 var minute: int
 
 # Multiplier for how fast time moves in-game relative to delta time.
-@export var INGAME_SPEED = 1.0
+@export var INGAME_SPEED = 1.5
 
 # Initial starting hour on scene boot (defaults to 12:00 PM noon).
 @export var INITIAL_HOUR = 12:
