@@ -9,7 +9,7 @@ class_name Pet
 # NODE REFERENCES
 # ==========================================
 # @onready tells Godot to wait until the game actually starts before finding these nodes.
-# The "$" is a shortcut for get_node(). It looks for children of this Pet node in the scene tree.
+# The "$" is "res://source/actors/pet/pet.gd"a shortcut for get_node(). It looks for children of this Pet node in the scene tree.
 @onready var shakeTween = $ShakeTween
 @onready var pet_stats = $PetStats
 @onready var pet_actions = $PetActions
@@ -25,7 +25,7 @@ class_name Pet
 # VARIABLES & SETTINGS
 # ==========================================
 # @export makes this variable visible in the Godot Inspector panel.
-@export var resource: Resource:
+@export var resource: petResource:
 	# This is a "setter". Whenever "resource" is changed (either in code or the inspector),
 	# this block of code runs automatically.
 	set(new_resource):
@@ -186,3 +186,13 @@ func walk_out_of_scene():
 	# Wait for the slide to finish.
 	await tween.finished
 	state = PetState.IDLE
+
+
+func change_state():
+		if pet_actions.pet_counter < pet_actions.pet_limit:
+			sprite.texture = resource.love_texture
+		elif pet_actions.pet_counter == pet_actions.pet_limit:
+			sprite.texture = resource.normal_texture
+		elif pet_actions.pet_counter > pet_actions.pet_limit:
+			sprite.texture = resource.hate_texture
+	

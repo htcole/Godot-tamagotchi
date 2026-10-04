@@ -161,12 +161,13 @@ func handle_food_reaction():
 # ==========================================
 func petting():
 	pet_counter += 1
+	pet.change_state()
 	
 	# Penalty for over-petting (pet gets annoyed).
 	if pet_counter > pet_limit:
 		print('dont want pets now')
 		reaction_popup('sick')
-		
+		#sprite.texture = resource.hate_texture
 		pet.pet_stats.happiness -= 5
 		return
 		
