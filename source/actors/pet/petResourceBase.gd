@@ -29,6 +29,7 @@ enum AnimalType { Monkey, Capybara }
 @export var normal_texture: Texture2D
 @export var love_texture: Texture2D
 @export var hate_texture: Texture2D
+@export var clean_texture: Texture2D
 
 # ==========================================
 # HELPER FUNCTIONS

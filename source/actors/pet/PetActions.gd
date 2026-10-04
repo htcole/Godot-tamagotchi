@@ -63,7 +63,8 @@ func pet_action(action):
 	if pet.state != pet.PetState.IDLE:
 		print('pet not idle')
 		return
-		
+	
+	
 	# Match statement acts like a clean switch/if-else tree based on the action string.
 	match action:
 		"feed":
@@ -161,28 +162,30 @@ func handle_food_reaction():
 # ==========================================
 func petting():
 	pet_counter += 1
-	pet.change_state()
 	
 	# Penalty for over-petting (pet gets annoyed).
 	if pet_counter > pet_limit:
 		print('dont want pets now')
+		pet.hate_state()
 		reaction_popup('sick')
-		#sprite.texture = resource.hate_texture
 		pet.pet_stats.happiness -= 5
 		return
 		
 	if pet_counter == pet_limit:
+		pet.normal_state()
 		reaction_popup('sick')
 		print('enough pets')
 		pet.pet_stats.happiness += 5
 		return
 		
 	# Normal successful petting.
+	pet.love_state()
 	reaction_popup('love')
 	pet.pet_stats.happiness += 5 # CHANGE - lowered happiness amount per pet
 	pet.gain_experience(2)
 
 func clean():
+	pet.clean_state()
 	# If pet is already clean (>90 or >70), cleaning annoys them slightly.
 	if pet.pet_stats.hygiene > 90:
 		pet.pet_stats.fun -= 15

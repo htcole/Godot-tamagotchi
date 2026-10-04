@@ -20,6 +20,7 @@ class_name Pet
 @export var normal_texture: Texture2D
 @export var love_texture: Texture2D
 @export var hate_texture: Texture2D
+@export var clean_texture: Texture2D
 
 # ==========================================
 # VARIABLES & SETTINGS
@@ -188,11 +189,14 @@ func walk_out_of_scene():
 	state = PetState.IDLE
 
 
-func change_state():
-		if pet_actions.pet_counter < pet_actions.pet_limit:
-			sprite.texture = resource.love_texture
-		elif pet_actions.pet_counter == pet_actions.pet_limit:
-			sprite.texture = resource.normal_texture
-		elif pet_actions.pet_counter > pet_actions.pet_limit:
-			sprite.texture = resource.hate_texture
+func love_state():
+	sprite.texture = resource.love_texture
 	
+func hate_state():
+	sprite.texture = resource.hate_texture
+	
+func normal_state():
+	sprite.texture = resource.normal_texture
+	
+func clean_state():
+	sprite.texture = resource.clean_texture

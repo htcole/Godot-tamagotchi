@@ -1,6 +1,7 @@
 [gd_resource type="Resource" script_class="petResource" format=3 uid="uid://m1hfx8b3e4ks"]
 
 [ext_resource type="Script" uid="uid://cfbkr2xdkawqo" path="res://source/actors/pet/petResourceBase.gd" id="1_1dfvv"]
+[ext_resource type="Texture2D" uid="uid://cjfj3qnxhxogg" path="res://assets/img/Pets/capybara_clean.png" id="1_hqin3"]
 [ext_resource type="Texture2D" uid="uid://u17yg8ykmwan" path="res://assets/img/Pets/capybara_hate.png" id="1_qak65"]
 [ext_resource type="Texture2D" uid="uid://41gfrwcnmpog" path="res://assets/img/Pets/capybara_love.png" id="2_hqin3"]
 [ext_resource type="Texture2D" uid="uid://bhfjprgp4pnof" path="res://assets/img/Pets/capybara.png" id="2_ob2jw"]
@@ -12,3 +13,4 @@ texture = ExtResource("2_ob2jw")
 normal_texture = ExtResource("2_ob2jw")
 love_texture = ExtResource("2_hqin3")
 hate_texture = ExtResource("1_qak65")
+clean_texture = ExtResource("1_hqin3")
