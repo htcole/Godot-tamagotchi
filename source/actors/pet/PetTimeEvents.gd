@@ -5,11 +5,11 @@ extends Node
 
 # Stats interval before change, set in in-game minutes
 const HUNGER_INTERVAL = 10
-const HAPPINESS_INTERVAL = 15
-const HYGINE_INTERVAL = 30
+const HAPPINESS_INTERVAL = 14
+const HYGINE_INTERVAL = 35
 const FUN_INTERVAL = 15
-const SOCIAL_INTERVAL = 30
-const TIRED_INTERVAL = 45
+const SOCIAL_INTERVAL = 35
+const TIRED_INTERVAL = 40
 const POOP_INTERVAL = 30
 const XP_GAIN_INTERVAL = 10
 
